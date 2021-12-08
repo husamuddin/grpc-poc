@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service Countries {
+  rpc GetCountries(CountriesRequest) returns (CountriesResponse) {}
+}
+
+message CountriesRequest {
+  string requestBody = 1;
+}
+
+message CountriesResponse {
+  string data = 1;
+}
